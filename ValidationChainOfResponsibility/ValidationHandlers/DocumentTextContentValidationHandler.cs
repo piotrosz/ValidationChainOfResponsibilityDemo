@@ -1,6 +1,4 @@
-﻿using ValidationChainOfResponsibility;
-using ValidationChainOfResponsibility.Validation;
-using ValidationChainOfResponsibility.ValidationHandlers;
+﻿using ValidationChainOfResponsibility.Validation;
 
 namespace ValidationChainOfResponsibility.ValidationHandlers
 {

@@ -32,7 +32,7 @@ namespace ValidationChainOfResponsibilityTests
 
             result.Validator.Should().Be(typeof(DocumentTextLengthValidator));
             result.ValidationResult.IsValid.Should().BeFalse();
-            result.ValidationResult.Errors[0].PropertyName.Should().Be("Text");
+            result.ValidationResult.Errors[0].PropertyName.Should().Be("Text.Length");
         }
 
         [Fact]

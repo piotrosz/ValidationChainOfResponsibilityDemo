@@ -23,7 +23,7 @@ namespace ValidationChainOfResponsibility.ValidationHandlers
 
         public ValidationHandlerResult Validate(TEntity entity)
         {
-            TValidator validator = new TValidator();
+            var validator = new TValidator();
             var result = validator.Validate(entity);
 
             if (result.IsValid && SuccessorHandler != null)
@@ -38,5 +38,4 @@ namespace ValidationChainOfResponsibility.ValidationHandlers
             };
         }
     }
-
 }
